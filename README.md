@@ -1,4 +1,5 @@
-# tech-conf
+# Virtual Technical conference application
+Technical conference application made using Vue.js and Bootstrap
 
 ## Project setup
 ```
