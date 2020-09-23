@@ -36,8 +36,8 @@ export default {
     };
   },
   beforeCreate() {
-    // console.log("beforeCreate method");
-    // console.log("The status of available data is: ", this.speakers, this.sponsors);
+    console.log("beforeCreate method");
+    console.log("The status of available data is: ", this.speakers, this.sponsors);
   },
   created() {
     // console.log("created method");
