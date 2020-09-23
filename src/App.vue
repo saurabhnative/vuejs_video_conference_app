@@ -46,7 +46,7 @@ export default {
     //   this.speakers,
     //   this.sponsors
     // );
-    this.shouldShowContent = true;
+    // this.shouldShowContent = true;
   },
   beforeMount() {
     // console.log("Values of this.$el", this.$el);
