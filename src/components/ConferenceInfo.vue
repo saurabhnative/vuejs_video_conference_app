@@ -25,7 +25,7 @@ export default {
 
 <style scoped>
 .event-container {
-    margin: 100px 40px;
+    margin: 190px 40px;
 }
 .event-date {
     color: #75c05e;

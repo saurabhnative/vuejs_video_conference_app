@@ -60,7 +60,7 @@ export default {
   margin-top: 10px;
 }
 .speakers-container {
-  margin: 20px 40px;
+  margin: 50px 40px;
 }
 .speaker-name {
   font-size: 1.25rem;

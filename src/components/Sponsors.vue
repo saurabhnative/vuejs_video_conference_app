@@ -39,7 +39,7 @@ export default {
   font-size: 4rem;
 }
 .sponsors-container {
-  margin: 50px 40px;
+  margin: 180px 40px;
 }
 .sponsors-title {
   font-size: 2.25rem;

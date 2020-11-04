@@ -7,6 +7,7 @@
       <Speakers :speakers="speakers" />
       <ConferenceEvents/>
       <Sponsors :sponsors="sponsors" />
+      <Footer />
     </div>
   </div>
 </template>
@@ -18,6 +19,7 @@ import Sponsors from "./components/Sponsors.vue";
 import ConferenceVideo from "./components/ConferenceVideo.vue";
 import ConferenceInfo from "./components/ConferenceInfo.vue";
 import ConferenceEvents from "./components/ConferenceEvents";
+import Footer from "./components/Footer";
 export default {
   name: "App",
   components: {
@@ -26,7 +28,8 @@ export default {
     ConferenceVideo,
     Speakers,
     Sponsors,
-    ConferenceEvents
+    ConferenceEvents,
+    Footer
   },
   data() {
     return {

@@ -31,7 +31,7 @@
 
 <style>
 .events-container {
-    margin: 100px 40px;
+    margin: 140px 40px;
 }
 .info-title {
     font-size: 2.25rem;

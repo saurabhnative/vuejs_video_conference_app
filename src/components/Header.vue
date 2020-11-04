@@ -1,10 +1,10 @@
 <template>
   <nav class="navbar navbar-dark bg-dark header">
-    <div class="text-light h1">Vue.js India</div>
+    <div class="text-light h1 mt-1">Vue.js India</div>
     <div class="ml-auto d-flex align-items-center">
       <div class="btn btn-light mr-2"><b>Sponsors</b></div>
       <button class="btn btn-light mr-2 " type="button"><b>Speakers</b></button>
-      <button class="btn btn-danger" type="button">Register</button>
+      <button class="btn btn-danger" type="button"><b>Register</b></button>
     </div>
   </nav>
 </template>
