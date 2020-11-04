@@ -1,14 +1,11 @@
 <template>
   <div id="app">
     <Header />
-    <div v-if="shouldShowContent">
+    <div v-if="shouldShowContent" class="content-container">
+      <ConferenceInfo :startConference="startConference"/>
       <ConferenceVideo :isConferenceStarted="isConferenceStarted" />
-      <div v-if="!isConferenceStarted" class="m-4">
-        <button @click="isConferenceStarted = true" class="btn btn-primary">
-          <span class="h3">Start Conference</span>
-        </button>
-      </div>
       <Speakers :speakers="speakers" />
+      <ConferenceEvents/>
       <Sponsors :sponsors="sponsors" />
     </div>
   </div>
@@ -19,19 +16,23 @@ import Header from "./components/Header.vue";
 import Speakers from "./components/Speakers.vue";
 import Sponsors from "./components/Sponsors.vue";
 import ConferenceVideo from "./components/ConferenceVideo.vue";
+import ConferenceInfo from "./components/ConferenceInfo.vue";
+import ConferenceEvents from "./components/ConferenceEvents";
 export default {
   name: "App",
   components: {
     Header,
+    ConferenceInfo,
     ConferenceVideo,
     Speakers,
     Sponsors,
+    ConferenceEvents
   },
   data() {
     return {
       shouldShowContent: false,
-      speakers: ["Speaker 1", "Speaker 2", "Speaker 3"],
-      sponsors: ["Sponsor 1", "Sponsor 2"],
+      speakers: ["Speaker 1", "Speaker 2", "Speaker 3", "Speaker 4"],
+      sponsors: ["Sponsor 1", "Sponsor 2", "Sponsor 3"],
       isConferenceStarted: false,
     };
   },
@@ -46,7 +47,7 @@ export default {
     //   this.speakers,
     //   this.sponsors
     // );
-    // this.shouldShowContent = true;
+    this.shouldShowContent = true;
   },
   beforeMount() {
     // console.log("Values of this.$el", this.$el);
@@ -74,15 +75,24 @@ export default {
   destroyed() {
     // console.log("Send analytics ");
   },
+  methods: { 
+    startConference: function () {
+        this.isConferenceStarted = !this.isConferenceStarted
+    }
+  }
 };
 </script>
 
 <style>
+body {
+  background-color: #343a40;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: white;
+  background-color: #343a40;
 }
 </style>
