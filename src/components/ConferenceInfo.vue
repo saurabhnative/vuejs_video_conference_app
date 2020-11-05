@@ -27,6 +27,11 @@ export default {
 .event-container {
     margin: 190px 40px;
 }
+@media only screen and (max-width: 600px) {
+  .event-container {
+    margin: 40px 0px;
+  }
+}
 .event-date {
     color: #75c05e;
     font-size: 1.5rem;
@@ -50,5 +55,11 @@ export default {
     border-radius: 30px;
     font-size: 1.2rem;
     font-weight: 700;
+}
+@media only screen and (max-width: 600px) {
+  .action-button {
+    width: 150px;
+    font-size: 1rem;
+  }
 }
 </style>

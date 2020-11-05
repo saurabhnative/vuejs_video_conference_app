@@ -33,6 +33,11 @@
 .events-container {
     margin: 140px 40px;
 }
+@media only screen and (max-width: 600px) {
+  .events-container {
+    margin: 0px;
+  }
+}
 .info-title {
     font-size: 2.25rem;
     font-weight: 600;
@@ -51,6 +56,22 @@
 }
 .event-container {
     margin: 50px 0px;
+}
+@media only screen and (max-width: 600px) {
+  .event-container {
+    margin: 0px;
+    flex-direction: column;
+  }
+  .event-image {
+    border-radius: 10px;
+    opacity: 0.5;
+    height: auto;
+    width: 100%;
+  }
+  .event-container-text-section {
+      padding: 0px !important;
+      margin-top: 10px;
+  }
 }
 .event-container-text-section {
     padding: 0px 30px;

@@ -41,6 +41,14 @@ export default {
 .sponsors-container {
   margin: 180px 40px;
 }
+@media only screen and (max-width: 600px) {
+  .sponsors-container {
+    margin: 20px 0px;
+  }
+  .sponsors-title { 
+    font-size: 2rem !important;
+  }
+}
 .sponsors-title {
   font-size: 2.25rem;
   font-weight: 600;
@@ -61,6 +69,11 @@ export default {
   width: 100%;
   border-radius: 10px;
   height: 250px;
+}
+@media only screen and (max-width: 600px) {
+  .sponsors-card {
+    margin: 20px 0px;
+  }
 }
 .sponsor-item-title {
   font-size: 2.5rem;

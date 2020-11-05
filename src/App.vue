@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="container">
     <Header />
     <div v-if="shouldShowContent" class="content-container">
       <ConferenceInfo :startConference="startConference"/>
@@ -97,5 +97,11 @@ body {
   text-align: center;
   color: white;
   background-color: #343a40;
+}
+@media only screen and (min-width: 600px) {
+  .container {
+    padding: 0px;
+    max-width: 100%;
+  }
 }
 </style>

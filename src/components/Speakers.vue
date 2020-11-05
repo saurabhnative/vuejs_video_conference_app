@@ -62,6 +62,14 @@ export default {
 .speakers-container {
   margin: 50px 40px;
 }
+@media only screen and (max-width: 600px) {
+  .speakers-container {
+    margin: 10px 0px;
+  }
+  .speaker-card { 
+    margin-top: 10px;
+  }
+}
 .speaker-name {
   font-size: 1.25rem;
   font-weight: 600;
